@@ -20,3 +20,103 @@
 body {
   font-family: "Poppins", "Arial", sans-serif;
 }
+
+main,
+.feature {
+  inline-size: 100%;
+}
+
+main {
+  min-block-size: 100vh;
+  max-block-size: 100%;
+}
+
+.feature {
+  block-size: max-content;
+  padding: 20% 10%;
+  background-color: var(--white);
+}
+
+.title {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.feature__title {
+  /* from 24px on 375px screen to 28px on 1920px screen */
+  font-size: clamp(1.5rem, calc(1.44rem + 0.26vw), 1.75rem);
+}
+
+.feature__title--light {
+  font-weight: 200;
+}
+
+.subtitle {
+  color: var(--gray);
+  line-height: 1.75;
+}
+
+.feature__subtitle {
+  max-inline-size: 36ch;
+  margin: 1.5rem auto;
+  /* from 15px on 375px screen to 18px on 1920px screen */
+  font-size: clamp(0.94rem, calc(0.89rem + 0.19vw), 1.13rem);
+}
+
+.feature__title,
+.feature__subtitle {
+  text-align: center;
+}
+
+.feature__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-block-start: 15%;
+  gap: 1.75rem;
+}
+
+.feature__card {
+  flex: 1;
+}
+
+.card {
+  max-inline-size: 100%;
+  padding: 1.25rem;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature__card--supervisor {
+  border-block-start: 4px solid var(--cyan);
+}
+
+.feature__card--team {
+  border-block-start: 4px solid var(--red);
+}
+
+.feature__card--karma {
+  border-block-start: 4px solid var(--orange);
+}
+
+.feature__card--calculator {
+  border-block-start: 4px solid var(--blue);
+}
+
+.card__title {
+  /* from 18px on 375px screen to 22px on 1920px screen */
+  font-size: clamp(1.13rem, calc(1.06rem + 0.26vw), 1.38rem);
+}
+
+.card__subtitle {
+  /* from 12px on 375px screen to 16px on 1920px screen */
+  font-size: clamp(0.75rem, calc(0.69rem + 0.26vw), 1rem);
+}
+
+.card__icon {
+  display: block;
+  inline-size: calc(2.125rem + 1vw);
+  margin-block-start: 1.5rem;
+  margin-inline-start: auto;
+}
