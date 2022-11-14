@@ -21,18 +21,13 @@ body {
   font-family: "Poppins", "Arial", sans-serif;
 }
 
-main,
 .feature {
   inline-size: 100%;
-}
-
-main {
   min-block-size: 100vh;
   max-block-size: 100%;
 }
 
 .feature {
-  block-size: max-content;
   padding: 20% 10%;
   background-color: var(--white);
 }
