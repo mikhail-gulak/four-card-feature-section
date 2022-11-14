@@ -120,3 +120,45 @@ main {
   margin-block-start: 1.5rem;
   margin-inline-start: auto;
 }
+
+/* for tablets (768px+) */
+@media screen and (min-width: 38em) {
+  .feature {
+    padding: 10% 20%;
+  }
+}
+
+/* for laptops (1024+) */
+
+@media screen and (min-width: 64em) {
+  .feature {
+    padding: 5% 20%;
+  }
+
+  .feature__container {
+    display: grid;
+    margin-block-start: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .feature__card--calculator {
+    grid-area: 1/3/2/3;
+  }
+
+  .feature__card--supervisor,
+  .feature__card--calculator {
+    transform: translateY(50%);
+  }
+
+  .feature__card--team,
+  .feature__card--karma {
+    grid-column: 2/3;
+  }
+}
+
+@media screen and (min-width: 64em) and (max-width: 90em) {
+  .feature {
+    padding: 5% 10%;
+  }
+}
